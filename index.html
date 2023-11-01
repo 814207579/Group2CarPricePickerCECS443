@@ -8,7 +8,7 @@
 <body>
 <label for="Makes">
     <div>
-        <select name="Makes" id="Makes" onclick="updateSecondaryOptions('Models', document.getElementById('Makes').value)">
+        <select name="Makes" id="Makes" onclick="updateSecondaryOptions('Models', document.getElementById('Makes').value)" onchange="updateLogo('CarImage', document.getElementById('Makes').value)">
             <option disabled selected>
                 Select a Model
             </option>
@@ -16,6 +16,11 @@
                 createMakeSelect("Makes")
             </script>
         </select>
+    </div>
+</label>
+<label>
+    <div>
+        <img id="CarImage" alt="Car Logo" src="https://car-logos.org/"/>
     </div>
 </label>
 <label>

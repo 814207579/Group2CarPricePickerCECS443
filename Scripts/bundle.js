@@ -52,12 +52,16 @@ window.updateSecondaryOptions = function updateSecondaryOptions(documentID, inpu
     const data = getModels(inputModel)
     const selectElement = document.getElementById(documentID)
     _.forEach(data.toString().split(","), function(model) {
-        console.log(model)
         let option = document.createElement("option")
         option.val = model
         option.innerHTML = model
         selectElement.add(option)
     })
+}
+
+window.updateLogo = function updateLogo(documentID, inputModel) {
+    //regex to replace all " " with -
+    $("#" + documentID).attr('src', "https://car-logos.org/wp-content/uploads/2022/08/" + inputModel.replace(/ /g, '-').toLowerCase() + ".png")
 }
 },{"../car-models.json":2,"jquery":3,"lodash":4}],2:[function(require,module,exports){
 module.exports=[
