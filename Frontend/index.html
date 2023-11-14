@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Price Checker</title>
+    <title>Car Marketplace</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <!-- Navigation bar, branding, etc. -->
+        <nav>
+          <div class = "logomain">
+                <img src="https://images-platform.99static.com//WO5rahLoTG5iRg0D1kCEDVrI7XI=/222x0:935x713/fit-in/500x500/99designs-contests-attachments/70/70388/attachment_70388209", alt="errorlogo"/>
+          </div>  
+              
+          <div class="logo">
+            Car price checker
+            <div class="login-link-container">
+                <a href="/Frontend/component/login.html">Login</a> <!-- Update href with the actual path to your login page -->
+            </div>
+        </div>
+            <ul class="nav-links">
+                <li><a href="#featured-cars">Featured</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+              
+        </nav>
     </header>
 
-    <main id="car-list">
-        <!-- Car items will be added here by JavaScript -->
-    </main>
+    <section class="hero">
+        <h1>Welcome to Carpricecheker</h1>
+        <p>Find Your Dream Car or Sell Your Car Quickly</p>
+        <form class="search-form">
+            <input type="text" placeholder="Search for cars...">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="featured-cars">
+        <h2>Cars</h2>
+        <div id="car-listings">
+            <!-- Car listings will be dynamically loaded here -->
+        </div>
+    </section>
 
     <footer>
-        <!--Footer -->
+        <p>© 2023 CarMarket. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
