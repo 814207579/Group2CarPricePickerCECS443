@@ -36,7 +36,7 @@ nav {
     margin-top: 10px; /* Add space between the title and the login link */
 }
 
-.logo .login-link-container a {
+.login-link-container a {
     display: inline-block; /* Make the link an inline-block for proper centering */
     background-color: #0056b3;
     color: white;

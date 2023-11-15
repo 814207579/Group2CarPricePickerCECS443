@@ -15,16 +15,18 @@
               
           <div class="logo">
             Car price checker
-            <div class="login-link-container">
-                <a href="/Frontend/component/login.html">Login</a> <!-- Update href with the actual path to your login page -->
+            <div >
+                <ul class="nav-links">
+                    <li><a href="#featured-cars">Featured</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-            <ul class="nav-links">
-                <li><a href="#featured-cars">Featured</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-              
+       <div class="login-link-container">
+            <a href="/Frontend/component/login.html">Login</a> <!-- Update href with the actual path to your login page -->
+        </div> 
+            
         </nav>
     </header>
 
@@ -32,7 +34,7 @@
         <h1>Welcome to Carpricecheker</h1>
         <p>Find Your Dream Car or Sell Your Car Quickly</p>
         <form class="search-form">
-            <input type="text" placeholder="Search for cars...">
+            <input type="text" id="carInput" placeholder="Search for cars...">
             <button type="submit">Search</button>
         </form>
     </section>
@@ -48,6 +50,6 @@
         <p>© 2023 CarMarket. All rights reserved.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/Frontend/main.js"></script>
 </body>
 </html>
