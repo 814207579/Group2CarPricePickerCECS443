@@ -15,35 +15,35 @@ header {
 nav {
     display: flex;
     align-items: center;
-    justify-content: center; /* This will push the logo to the very left */
-    padding: 0 20px; /* Add padding to the sides of the nav */
+    justify-content: center; /* this will push the logo to the very left */
+    padding: 0 20px; /* add padding to the sides of the nav */
 }
 
 .logomain img {
-    max-width: 100px; /* Adjust as needed */
+    max-width: 100px; /*adjust as needed */
     height: auto;
 }
 
 .logo {
     color: white;
-    text-align: center; /* Center align the text */
-    padding: 0; /* Adjust padding as needed */
-    margin: 0 auto; /* Center the logo div if needed */
+    text-align: center; /* center align the text */
+    padding: 0; /* adjust padding as needed */
+    margin: 0 auto; /* center the logo div if needed */
 }
 
 .login-link-container {
-    text-align: center; /* Center align the container */
-    margin-top: 10px; /* Add space between the title and the login link */
+    text-align: center; /* center align the container */
+    margin-top: 10px; /* add space between the title and the login link */
 }
 
 .login-link-container a {
-    display: inline-block; /* Make the link an inline-block for proper centering */
+    display: inline-block; /* make the link an inline-block for proper centering */
     background-color: #0056b3;
     color: white;
     padding: 10px 15px;
     border-radius: 4px;
     text-decoration: none;
-    margin-top: 5px; /* Optional: add more space between the text and the button if desired */
+    margin-top: 5px; /* optional: add more space between the text and the button if desired */
 }
 
 .logo .login-link-container a:hover {
@@ -60,7 +60,7 @@ nav {
 }
 
 .nav-links li {
-    padding: 10px 15px; /* Optional padding for the links */
+    padding: 10px 15px; /* optional padding for the links */
 }
 
 .nav-links a {
