@@ -1,0 +1,164 @@
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0; /* Adjusted padding for header */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* this will push the logo to the very left */
+    padding: 0 20px; /* add padding to the sides of the nav */
+}
+
+.logomain img {
+    max-width: 100px; /*adjust as needed */
+    height: auto;
+}
+
+.logo {
+    color: white;
+    text-align: center; /* center align the text */
+    padding: 0; /* adjust padding as needed */
+    margin: 0 auto; /* center the logo div if needed */
+}
+
+.login-link-container {
+    text-align: center; /* center align the container */
+    margin-top: 10px; /* add space between the title and the login link */
+}
+
+.login-link-container a {
+    display: inline-block; /* make the link an inline-block for proper centering */
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 5px; /* optional: add more space between the text and the button if desired */
+}
+
+.logo .login-link-container a:hover {
+    background-color: #004494;
+}
+
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 10px 15px; /* optional padding for the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-button a {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.login-button a:hover {
+    background-color: #004494;
+}
+
+.hero {
+    background: url('car-hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.search-form button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#featured-cars {
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.car-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#car-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the car listings */
+}
+
+.car {
+    flex-basis: calc(25% - 20px); /* Adjusts the width to fit four items per row */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+    padding: 15px;
+    text-align: center; /* Centering the text */
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .car {
+        flex-basis: calc(33.333% - 20px); /* 3 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .car {
+        flex-basis: calc(50% - 20px); /* 2 items per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .car {
+        flex-basis: 100%; /* 1 item per row on extra small screens */
+    }
+}
