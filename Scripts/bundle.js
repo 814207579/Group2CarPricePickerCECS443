@@ -1,8 +1,12 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+
+},{}],2:[function(require,module,exports){
 const _ = require('lodash');
 const $ = require("jquery");
+const fs = require("fs");
 
-const data = require("../car-models.json");
+const data = require("./../data/car-models.json");
+
 /*
 _.forEach(data,function(carTypes) {
     console.log("Make:", carTypes.brand)
@@ -63,7 +67,12 @@ window.updateLogo = function updateLogo(documentID, inputModel) {
     //regex to replace all " " with -
     $("#" + documentID).attr('src', "https://car-logos.org/wp-content/uploads/2022/08/" + inputModel.replace(/ /g, '-').toLowerCase() + ".png")
 }
-},{"../car-models.json":2,"jquery":3,"lodash":4}],2:[function(require,module,exports){
+
+window.saveJsonData = function saveJsonData(data, jsonFileName) {
+    fs.writeFile(jsonFileName, data, function() {
+    });
+}
+},{"./../data/car-models.json":3,"fs":1,"jquery":4,"lodash":5}],3:[function(require,module,exports){
 module.exports=[
   {
     "brand": "Acura",
@@ -1610,7 +1619,7 @@ module.exports=[
   }
 ]
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.7.1
  * https://jquery.com/
@@ -12328,7 +12337,7 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 (function (global){(function (){
 /**
  * @license
@@ -29541,4 +29550,4 @@ return jQuery;
 }.call(this));
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}]},{},[1]);
+},{}]},{},[2]);

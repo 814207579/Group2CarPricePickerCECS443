@@ -2,35 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Car Price Picker</title>
-    <script src="Scripts/bundle.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Marketplace</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<label for="Makes">
-    <div>
-        <select name="Makes" id="Makes" onclick="updateSecondaryOptions('Models', document.getElementById('Makes').value)" onchange="updateLogo('CarImage', document.getElementById('Makes').value)">
-            <option disabled selected>
-                Select a Model
-            </option>
-            <script>
-                createMakeSelect("Makes")
-            </script>
-        </select>
-    </div>
-</label>
-<label>
-    <div>
-        <img id="CarImage" alt="Car Logo" src="https://car-logos.org/"/>
-    </div>
-</label>
-<label>
-    <div>
-        <select name="Models" id="Models">
-            <option>
-                Select a make
-            </option>
-        </select>
-    </div>
-</label>
+    <header>
+        <nav>
+          <div class = "logomain">
+                <img src="https://images-platform.99static.com//WO5rahLoTG5iRg0D1kCEDVrI7XI=/222x0:935x713/fit-in/500x500/99designs-contests-attachments/70/70388/attachment_70388209", alt="errorlogo"/>
+          </div>  
+              
+          <div class="logo">
+            Car price checker
+            <div >
+                <ul class="nav-links">
+                    <li><a href="#featured-cars">Featured</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+       <div class="login-link-container">
+            <a href="component/login/login.html" id="loginLogoutButton">Login</a> <!-- Update href with the actual path to your login page -->
+        </div>
+        <div class="login-link-container">
+            <a href="component/register/register.html" id="registerButton">Register</a> <!-- Update href with the actual path to your login page -->
+        </div>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Carpricecheker</h1>
+        <p>Find Your Dream Car or Sell Your Car Quickly</p>
+        <form class="search-form">
+            <input type="text" id="carInput" placeholder="Search for cars...">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="featured-cars">
+        <h2>Cars</h2>
+        <div id="car-listings">
+            <!-- Car listings will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 CarMarket. All rights reserved.</p>
+    </footer>
+
+    <script src="/Frontend/main.js"></script>
 </body>
 </html>

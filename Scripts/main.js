@@ -1,7 +1,9 @@
 const _ = require('lodash');
 const $ = require("jquery");
+const fs = require("fs");
 
-const data = require("../car-models.json");
+const data = require("./../data/car-models.json");
+
 /*
 _.forEach(data,function(carTypes) {
     console.log("Make:", carTypes.brand)
@@ -61,4 +63,9 @@ window.updateSecondaryOptions = function updateSecondaryOptions(documentID, inpu
 window.updateLogo = function updateLogo(documentID, inputModel) {
     //regex to replace all " " with -
     $("#" + documentID).attr('src', "https://car-logos.org/wp-content/uploads/2022/08/" + inputModel.replace(/ /g, '-').toLowerCase() + ".png")
+}
+
+window.saveJsonData = function saveJsonData(data, jsonFileName) {
+    fs.writeFile(jsonFileName, data, function() {
+    });
 }
