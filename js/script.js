@@ -14,7 +14,7 @@ function fetchAndDisplayCars() {
 }
 
 function displayCars(cars) {
-  const carsSection = document.getElementById('cars-section') || document.body; // Modify as needed
+  const carsSection = document.getElementById('cars-section') || document.body; 
   carsSection.innerHTML = ''; // Clear previous content
 
   cars.forEach(car => {
