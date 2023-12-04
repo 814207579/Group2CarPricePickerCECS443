@@ -1,12 +1,12 @@
 {
 	"users": [
 		{
-			"userName": "admin",
+			"userName": "admin@gmail.com",
 			"password": "password",
 			"type": "admin"
 		},
 		{
-			"userName": "user",
+			"userName": "user@gmail.com",
 			"password": "password",
 			"type": "user"
 		}
