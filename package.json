@@ -2,7 +2,7 @@
   "name": "group2carpricepickercecs443",
   "version": "1.0.0",
   "description": "Json file with car makes/models used with permission from: https://github.com/FormidableLabs/radon-typeahead/blob/master/demo/car-models.json",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/814207579/Group2CarPricePickerCECS443#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21"
-  }
+  },
+  "type": "module"
 }

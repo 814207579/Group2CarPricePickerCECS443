@@ -1,5 +1,9 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const file= require("fs");
+
 function fetchAndDisplayCars() {
   const apiUrl = 'https://www.carqueryapi.com/api/0.3/?cmd=getMakes'; // Replace with actual API URL
 
@@ -187,6 +191,58 @@ function logout(e) {
   window.location.href = 'index.html';
 }
 
+function creatAccount() {
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  //make sure the fields aren't empty
+  if (username == "" || password == "") {
+    alert("Please input a username and password to create your account.")
+  }
+  //get the json data
+  fetch('data/login.json')
+      .then(response => response.json())
+      .then(data => {
+        if (data) {
+          for (let i = 0; i < data.users.length; i++) {
+            //check for dupe username
+            if (data.users[i].userName.toLowerCase() === username.toLowerCase()) {
+              alert("Username already exists, Please pick another username.")
+            }
+            else {
+
+              let userDataRaw = file.readFileSync("data/login.json", "utf-8");
+              let userDataParsed = JSON.parse(userDataRaw)
+              console.log("testttttttttttttttttttt");
+              //create the new user object
+              let user = {
+
+                    "userName": username,
+                    "password": password,
+                    "type": "user"
+              }
+              userDataParsed.push(user);
+              userDataRaw.stringify();
+              file.writeFileSync("data/login.json", userDataRaw, "utf-8");
+            }
+          }
+          // Redirect back to  homepage
+          window.location.href = 'index.html';
+        }
+        else {
+          //alert an error if data isn't loaded
+          alert("Error");
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error logging in');
+      });
+
+
+
+}
 document.getElementById('loginForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
@@ -221,3 +277,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         alert('Error logging in');
       });
 });
+
+function login() {
+
+}
