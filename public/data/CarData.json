@@ -1,0 +1,244 @@
+{
+  "cars": [
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "model_year": 2018,
+      "price": 18000,
+      "mileage": 35000,
+      "location": {
+        "city": "Los Angeles",
+        "state": "California"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "model_year": 2019,
+      "price": 16000,
+      "mileage": 25000,
+      "location": {
+        "city": "New York City",
+        "state": "New York"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Ford",
+      "model": "Fusion",
+      "model_year": 2017,
+      "price": 15000,
+      "mileage": 42000,
+      "location": {
+        "city": "Houston",
+        "state": "Texas"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "model_year": 2016,
+      "price": 14000,
+      "mileage": 48000,
+      "location": {
+        "city": "Miami",
+        "state": "Florida"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Malibu",
+      "model_year": 2019,
+      "price": 17500,
+      "mileage": 30000,
+      "location": {
+        "city": "Chicago",
+        "state": "Illinois"
+      },
+	  "image": "",
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "model_year": 2018,
+      "price": 16000,
+      "mileage": 35000,
+      "location": {
+        "city": "Phoenix",
+        "state": "Arizona"
+      },
+	  "image": ""
+    },
+    {
+      "make": "BMW",
+      "model": "3 Series",
+      "model_year": 2017,
+      "price": 23000,
+      "mileage": 28000,
+      "location": {
+        "city": "San Francisco",
+        "state": "California"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "model_year": 2018,
+      "price": 25000,
+      "mileage": 26000,
+      "location": {
+        "city": "Atlanta",
+        "state": "Georgia"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "model_year": 2019,
+      "price": 28000,
+      "mileage": 20000,
+      "location": {
+        "city": "Dallas",
+        "state": "Texas"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "model_year": 2017,
+      "price": 19000,
+      "mileage": 38000,
+      "location": {
+        "city": "Denver",
+        "state": "Colorado"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "model_year": 2018,
+      "price": 15000,
+      "mileage": 32000,
+      "location": {
+        "city": "Seattle",
+        "state": "Washington"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Kia",
+      "model": "Optima",
+      "model_year": 2017,
+      "price": 14000,
+      "mileage": 40000,
+      "location": {
+        "city": "Orlando",
+        "state": "Florida"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "model_year": 2018,
+      "price": 16500,
+      "mileage": 29000,
+      "location": {
+        "city": "Philadelphia",
+        "state": "Pennsylvania"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "model_year": 2019,
+      "price": 20000,
+      "mileage": 24000,
+      "location": {
+        "city": "Boston",
+        "state": "Massachusetts"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Lexus",
+      "model": "RX",
+      "model_year": 2018,
+      "price": 32000,
+      "mileage": 18000,
+      "location": {
+        "city": "Charlotte",
+        "state": "North Carolina"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Jeep",
+      "model": "Cherokee",
+      "model_year": 2017,
+      "price": 19500,
+      "mileage": 36000,
+      "location": {
+        "city": "Detroit",
+        "state": "Michigan"
+      },
+	  "image": ""
+    },
+    {
+      "make": "GMC",
+      "model": "Terrain",
+      "model_year": 2018,
+      "price": 18500,
+      "mileage": 31000,
+      "location": {
+        "city": "Minneapolis",
+        "state": "Minnesota"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Tesla",
+      "model": "Model 3",
+      "model_year": 2019,
+      "price": 35000,
+      "mileage": 15000,
+      "location": {
+        "city": "Portland",
+        "state": "Oregon"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Volvo",
+      "model": "S60",
+      "model_year": 2018,
+      "price": 24000,
+      "mileage": 22000,
+      "location": {
+        "city": "Austin",
+        "state": "Texas"
+      },
+	  "image": ""
+    },
+    {
+      "make": "Chrysler",
+      "model": "300",
+      "model_year": 2017,
+      "price": 17000,
+      "mileage": 33000,
+      "location": {
+        "city": "San Diego",
+        "state": "California"
+      },
+	  "image": ""
+    }
+  ]
+}

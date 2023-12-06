@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="312291a0-8f8d-4c0b-96e0-c35c960736f9" name="localDev" url="localhost:8080">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+      <webServer id="3ad178e5-bb07-4ad2-826a-e4f25534d3fb" name="localDev2" url="http://localhost:8080">
+        <fileTransfer mountedRoot="C:\Users\Andrew\Documents\GitHub\Group2CarPricePickerCECS443" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
