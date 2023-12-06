@@ -9,12 +9,74 @@ const port = 5000;                  //Save the port number where your server wil
 
 //Idiomatic expression in express to route and respond to a client request
 app.get('/', (req, res) => {        //get requests to the root ("/") will route here
-    res.sendFile('index.html', {root: __dirname});      //server responds by sending the index.html file to the client's browser
+    res.sendFile('public/index.html', {root: __dirname});      //server responds by sending the index.html file to the client's browser
     // the .sendFile method needs the absolute path to the file, see: https://expressjs.com/en/4x/api.html#res.sendFile
 });
 
-app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
+app.get('/public', function(req, res){
+    res.sendFile('public/css/style.css', {root: __dirname});
+});
+
+//Serve all static files
+app.get('/public/:folder/:fileName', function(req, res){
+    const folder = req.params.folder;
+    const fileName = req.params.fileName;
+    res.sendFile(`public/${folder}/${fileName}`, { root: __dirname });
+});
+
+
+app.listen(port, () => {
     console.log(`Now listening on port ${port}`);
 });
 
 //from: https://levelup.gitconnected.com/set-up-and-run-a-simple-node-server-project-38b403a3dc09
+
+const file= require("fs");
+function creatAccount() {
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    //make sure the fields aren't empty
+    if (username == "" || password == "") {
+        alert("Please input a username and password to create your account.")
+    }
+    //get the json data
+    fetch('public/data/login.json')
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                for (let i = 0; i < data.users.length; i++) {
+                    //check for dupe username
+                    if (data.users[i].userName.toLowerCase() === username.toLowerCase()) {
+                        alert("Username already exists, Please pick another username.")
+                    }
+                    else {
+
+                        let userDataRaw = file.readFileSync("data/login.json", "utf-8");
+                        let userDataParsed = JSON.parse(userDataRaw)
+                        //create the new user object
+                        let user = {
+
+                            "userName": username,
+                            "password": password,
+                            "type": "user"
+                        }
+                        userDataParsed.push(user);
+                        userDataRaw.stringify();
+                        file.writeFileSync("public/data/login.json", userDataRaw, "utf-8");
+                    }
+                }
+                // Redirect back to  homepage
+                window.location.href = '/';
+            }
+            else {
+                //alert an error if data isn't loaded
+                alert("Error");
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error logging in');
+        });
+}

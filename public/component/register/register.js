@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const password = document.getElementById('password').value;
 
     // Replace with backendAPI when done
-    fetch("./../../data/login.json")
+    fetch("data/login.json")
     .then(response => response.json())
     .then(data => {
         if (data) {
@@ -35,13 +35,13 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
                     });
                     let blob = new Blob([JSON.stringify(data)], { type: 'application/json' })
 
-                    saveJsonData(data, "./../../data/login.json")
+                    saveJsonData(data, "data/login.json")
                     //TODO write the new data to the json file
                     break;
                 }
             }
-            // Redirect back to  homepage
-            window.location.href = '../../index.html';
+            // Redirect back to root page
+            window.location.href = '/';
         } else {
             // Handle login failure
             alert('Login failed!');

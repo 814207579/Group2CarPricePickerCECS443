@@ -2,7 +2,7 @@
   "name": "group2carpricepickercecs443",
   "version": "1.0.0",
   "description": "Json file with car makes/models used with permission from: https://github.com/FormidableLabs/radon-typeahead/blob/master/demo/car-models.json",
-  "main": "main.js",
+  "main": "nodeStart.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

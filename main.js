@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fetch and display cars
     fetch('https://fakestoreapi.com/products')
-    .then(response => response.json())
-    .then(data => {
-        allCars = data;
-        displayCars(allCars);
-    })
-    .catch(error => console.error('Error:', error));
+        .then(response => response.json())
+        .then(data => {
+            allCars = data;
+            displayCars(allCars);
+        })
+        .catch(error => console.error('Error:', error));
 
     // Search functionality
     document.querySelector('.search-form').addEventListener('submit', function (e) {
@@ -58,7 +58,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
                     }
                 }
                 // Redirect back to  homepage
-                window.location.href = 'index.html';
+                window.location.href = '/';
             } else {
                 // Handle login failure
                 alert('Login failed!');
