@@ -188,6 +188,36 @@ function logout(e) {
   localStorage.removeItem('userType');
   window.location.href = '/';
 }
+document.addEventListener('DOMContentLoaded', function() {
+  // Attach the event listener to the swiper-wrapper, which is static
+  document.querySelector('.swiper-wrapper').addEventListener('click', function(event) {
+      // Check if the clicked element is a convert-button
+      if (event.target && event.target.classList.contains('convert-button')) {
+          const button = event.target;
+          const price = parseFloat(button.getAttribute('data-price'));
+          const targetId = button.getAttribute('data-target');
+          const currentCurrency = button.getAttribute('data-currency') || 'USD';
+
+          if (currentCurrency === "USD") {
+              convertToEuro(price, targetId, button);
+          } else {
+              convertToUSD(price, targetId, button);
+          }
+      }
+  });
+});
+
+function convertToEuro(amount, targetId, button) {
+  const usdToEuroRate = 0.88; // Sample conversion rate
+  const convertedAmount = amount * usdToEuroRate;
+  document.getElementById(targetId).innerHTML = `<span>price : </span> €${convertedAmount.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits: 2})}/-`;
+  button.setAttribute('data-currency', 'EURO');
+}
+
+function convertToUSD(amount, targetId, button) {
+  document.getElementById(targetId).innerHTML = `<span>price : </span> $${amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits:2})}/-`;
+  button.setAttribute('data-currency', 'USD');
+}
 
 
 
