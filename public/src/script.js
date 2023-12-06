@@ -169,16 +169,29 @@ function checkDocumentReadyState() {
 //login and redirect to homepage
 function updateLoginLogoutButton() {
   const loginLogoutButton = document.getElementById('loginLogoutButton');
+  const buttonContainer = loginLogoutButton.parentNode;
+
+  // Remove existing 'Add Car' button if it exists
+  const existingAddCarButton = document.getElementById('addCarButton');
+  if (existingAddCarButton) {
+      buttonContainer.removeChild(existingAddCarButton);
+  }
 
   if (localStorage.getItem('isLoggedIn')) {
-    //logged in
-    loginLogoutButton.textContent = 'Logout';
-    loginLogoutButton.onclick = logout;
-  }
-  else {
-    //not logged in
-    loginLogoutButton.textContent = 'Login';
-    loginLogoutButton.onclick = null; // Remove any old attached click
+      // Logged in
+      loginLogoutButton.textContent = 'Logout';
+      loginLogoutButton.onclick = logout;
+
+      // Create and add 'Add Car' button
+      const addCarButton = document.createElement('button');
+      addCarButton.textContent = 'Add Car';
+      addCarButton.id = 'addCarButton';
+      addCarButton.onclick = addCar; // Implement addCar function to handle the click event
+      buttonContainer.insertBefore(addCarButton,loginLogoutButton);
+  } else {
+      // Not logged in
+      loginLogoutButton.textContent = 'Login';
+      loginLogoutButton.onclick = null; // Remove any old attached click
   }
 }
 
@@ -187,6 +200,12 @@ function logout(e) {
   localStorage.removeItem('isLoggedIn');
   localStorage.removeItem('userType');
   window.location.href = '/';
+}
+
+function addCar(e) {
+  e.stopPropagation(); // Prevents the event from bubbling up the DOM
+  window.open('/public/component/input.html', 'Add Car', 'width=600,height=400');
+  console.log("Add Car button clicked!");
 }
 document.addEventListener('DOMContentLoaded', function() {
   // Attach the event listener to the swiper-wrapper, which is static
