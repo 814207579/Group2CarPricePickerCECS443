@@ -32,7 +32,7 @@ app.listen(port, () => {
 //from: https://levelup.gitconnected.com/set-up-and-run-a-simple-node-server-project-38b403a3dc09
 
 const file= require("fs");
-function creatAccount() {
+function createAccount() {
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;

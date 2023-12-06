@@ -226,6 +226,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
       });
 });
 
-function login() {
-
+function changeValue(inputID, inputValue) {
+  document.getElementById(inputID).value = inputValue;
 }

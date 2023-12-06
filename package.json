@@ -17,11 +17,17 @@
   },
   "homepage": "https://github.com/814207579/Group2CarPricePickerCECS443#readme",
   "dependencies": {
+    "esmify": "^2.1.1",
     "express": "^4.18.2",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "babel-loader": "^9.1.3"
+  }
 }
