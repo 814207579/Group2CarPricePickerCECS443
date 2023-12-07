@@ -4,7 +4,7 @@ function fillCarData() {
     // Clear existing content before filling in new data
     parentSlider.innerHTML = '';
     // Replace with backendAPI when done
-    fetch("public/data/CarData.json")
+    fetch("/public/data/CarData.json")
         .then(response => response.json())
         .then(data => {
             if (data) {
