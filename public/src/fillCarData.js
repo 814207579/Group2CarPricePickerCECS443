@@ -8,8 +8,7 @@ function fillCarData() {
         .then(response => response.json())
         .then(data => {
             if (data) {
-                // Loop through the JSON data and create HTML for each car
-                console.log(data.cars)
+                //Loop through the JSON data and create HTML for each car
                 for(let i = 0; i < data.cars.length; i++) {
                     //update slider
                     const carSlide = document.createElement('div');
@@ -34,8 +33,6 @@ function fillCarData() {
 
                     parentSlider.appendChild(carSlide);
                 }
-
-                //
             }
 
         })

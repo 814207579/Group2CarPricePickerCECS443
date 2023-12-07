@@ -4,18 +4,6 @@ const fs = require("fs");
 
 const data = require("../public/data/car-models.json");
 
-/*
-_.forEach(data,function(carTypes) {
-    console.log("Make:", carTypes.brand)
-    process.stdout.write("Models: ")
-    let printString = "";
-    _.forEach(carTypes.models, function(modelName) {
-        printString+= modelName + ", "
-    })
-    printString.trimEnd()
-    console.log(printString, "\n")
-})*/
-
 function getMakes() {
     let returnArr = []
     _.forEach(data, function(carTypes) {
