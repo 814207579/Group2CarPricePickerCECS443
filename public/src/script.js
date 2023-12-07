@@ -164,6 +164,7 @@ function checkDocumentReadyState() {
   if (localStorage.getItem('isLoggedIn') === true && document.readyState === "complete" || document.readyState === "interactive") {
     updateLoginLogoutButton()
   }
+  //fillCarData();
 }
 
 //login and redirect to homepage
@@ -246,7 +247,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  // Replace with backendAPI when done
   fetch('public/data/login.json')
       .then(response => response.json())
       .then(data => {
@@ -278,3 +278,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 function changeValue(inputID, inputValue) {
   document.getElementById(inputID).value = inputValue;
 }
+

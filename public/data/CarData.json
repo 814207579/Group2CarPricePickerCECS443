@@ -10,7 +10,7 @@
         "city": "Los Angeles",
         "state": "California"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/1eeef0f6-915e-56ac-ac1c-3ca7775ff744/688bb2dd-56bc-4dbb-adff-c38361219b3c/Bi55xUu3SXsotNIvlVkUFyxbZtE.jpg"
     },
     {
       "make": "Honda",
@@ -22,7 +22,7 @@
         "city": "New York City",
         "state": "New York"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/36a10d5b-9dd3-5fb5-b9b7-47746629a407/24e8aadc-a3c5-47b9-8df9-113dec66f144/xgoPeuHmxmWDr5adjvHHP_VmgNQ.jpg"
     },
     {
       "make": "Ford",
@@ -34,7 +34,7 @@
         "city": "Houston",
         "state": "Texas"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/8f5ef3ec-f742-5515-9cd7-a2e4907c0c9d/7c116d46-6acc-4093-b19a-8b2a16f5e1fe/NqrDW2eUmq6ho4LvXuNNzdPRfvQ.jpg"
     },
     {
       "make": "Toyota",
@@ -46,7 +46,7 @@
         "city": "Miami",
         "state": "Florida"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/1eeef0f6-915e-56ac-ac1c-3ca7775ff744/7d511a6e-f809-47d7-9b4e-9549bfb8bed3/QGs7qKFFnIU1s-XOYMfvRJ1eKBQ.jpg"
     },
     {
       "make": "Chevrolet",
@@ -58,7 +58,7 @@
         "city": "Chicago",
         "state": "Illinois"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/4f64bfa5-c43b-4e55-a2c3-f6c5051341ee/045da656-a310-4417-b0e8-c27e2b2b77cc/-lY4cqIpvDuTSY7g6Zf-yBpihoY.jpg"
     },
     {
       "make": "Nissan",
@@ -70,11 +70,11 @@
         "city": "Phoenix",
         "state": "Arizona"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/1e5044b0-943a-4c04-a762-dd93e47868b1/75b8ac5e-175d-408a-ad34-f55f4b07de47/w59W33kKp6CPNzwcvWrKrWGgW9o.jpg"
     },
     {
       "make": "BMW",
-      "model": "3 Series",
+      "model": "330",
       "model_year": 2017,
       "price": 23000,
       "mileage": 28000,
@@ -82,11 +82,11 @@
         "city": "San Francisco",
         "state": "California"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/b914a908-67f7-54e9-8626-60a73d2d8245/8ef148fc-7d45-4b40-a2de-9ff6ff68409b/UmZFSg36vMn9q6c7K_QRXJCAlPw.jpg"
     },
     {
-      "make": "Mercedes-Benz",
-      "model": "C-Class",
+      "make": "Mercedes_Benz",
+      "model": "C_Class",
       "model_year": 2018,
       "price": 25000,
       "mileage": 26000,
@@ -94,7 +94,7 @@
         "city": "Atlanta",
         "state": "Georgia"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/44f6e87f-94ce-532f-b742-cf0b0ca1cdff/38dd09c4-6a58-4f8a-bbf9-ad2b529fc8f3/weh_-uZF7f68CB_jiCJ9QoIygNk.jpg"
     },
     {
       "make": "Audi",
@@ -106,19 +106,7 @@
         "city": "Dallas",
         "state": "Texas"
       },
-	  "image": ""
-    },
-    {
-      "make": "Subaru",
-      "model": "Outback",
-      "model_year": 2017,
-      "price": 19000,
-      "mileage": 38000,
-      "location": {
-        "city": "Denver",
-        "state": "Colorado"
-      },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/fa789e1f-512f-55cf-8eef-418dfdacb224/2f3f8db0-3562-4181-af0e-d200e52d3f2d/Q7lwosnEZ0Qr37-AtGtcW_hurlY.jpg"
     },
     {
       "make": "Hyundai",
@@ -130,7 +118,7 @@
         "city": "Seattle",
         "state": "Washington"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/1e5044b0-943a-4c04-a762-dd93e47868b1/339e305d-1f93-4fe5-aec6-10c7b7fa4871/IhuGDegfh5T_a3tz3vnb1J7BDZ0.jpg"
     },
     {
       "make": "Kia",
@@ -142,7 +130,7 @@
         "city": "Orlando",
         "state": "Florida"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/1e5044b0-943a-4c04-a762-dd93e47868b1/7bc2c3ce-e66a-4cfe-a315-3d7a04ebdd9e/LhBXwZd-OyG9-ESwnvnGf4XxTWs.jpg"
     },
     {
       "make": "Volkswagen",
@@ -154,11 +142,11 @@
         "city": "Philadelphia",
         "state": "Pennsylvania"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/04666f22-5b83-50aa-943c-3ed7182f040d/5fd76ae6-fc72-4ca0-a0c7-94479b8d70f1/c0F9kZ4zn3Px0aqJF3H2i_Ibr-s.jpg"
     },
     {
       "make": "Mazda",
-      "model": "CX-5",
+      "model": "CX_5",
       "model_year": 2019,
       "price": 20000,
       "mileage": 24000,
@@ -166,11 +154,11 @@
         "city": "Boston",
         "state": "Massachusetts"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/4cc5392d-fb77-59a7-809a-99e4cf850a05/15b2496c-de9a-4367-b440-69ef181f65b9/ddA1YETosGIyJvkLoz5dp9VAnxY.jpg"
     },
     {
       "make": "Lexus",
-      "model": "RX",
+      "model": "RX_330",
       "model_year": 2018,
       "price": 32000,
       "mileage": 18000,
@@ -178,7 +166,7 @@
         "city": "Charlotte",
         "state": "North Carolina"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/934529ab-47ad-5a79-bc62-16e13af71002/d783c675-ed4b-4cb8-ab00-01cf49f98dd0/W9FndX0iUShlWR6sKPdCRx7nSgo.jpg"
     },
     {
       "make": "Jeep",
@@ -190,7 +178,7 @@
         "city": "Detroit",
         "state": "Michigan"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/783d91a5-c15e-588e-81be-da27adf504a1/aec26f15-c728-4bd6-9c9b-095cb3903e30/N4Ifxqe8pecl84-fwlafYHE31ZM.jpg"
     },
     {
       "make": "GMC",
@@ -202,11 +190,11 @@
         "city": "Minneapolis",
         "state": "Minnesota"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/87e42d74-c868-542d-b234-494110db45b7/8d3e2bd9-d563-41a0-a1f2-e9d9223cc8ca/tc5ySJF0RqhaheSKbLmkfLaZ0jc.jpg"
     },
     {
       "make": "Tesla",
-      "model": "Model 3",
+      "model": "Model_3",
       "model_year": 2019,
       "price": 35000,
       "mileage": 15000,
@@ -214,7 +202,7 @@
         "city": "Portland",
         "state": "Oregon"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/16014dfc-a9f0-4040-a36a-00394c07d939/93b671be-f57b-4ceb-a98f-3758a9780874/lMg3MEJ-WI6QWxzRozftJ8czKqk.jpeg"
     },
     {
       "make": "Volvo",
@@ -226,7 +214,7 @@
         "city": "Austin",
         "state": "Texas"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/083f7dd7-7048-5277-9f89-e775e1264883/cca0673a-5fca-459f-ae5a-cf72f0cd377b/WdJGYMMq3QXbu403BoEIk5hg5_Y.jpg"
     },
     {
       "make": "Chrysler",
@@ -238,7 +226,7 @@
         "city": "San Diego",
         "state": "California"
       },
-	  "image": ""
+	  "image": "https://www.cars.com/i/large/in/v2/c2ed6b35-6d08-5ee7-9ab9-812b0db3a6b7/94a9a738-978a-40c0-8192-f7464d75d10b/n34RFeNjIbFvPRYPij5nhkyAEio.jpg"
     }
   ]
 }

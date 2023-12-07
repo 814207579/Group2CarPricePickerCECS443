@@ -18,7 +18,6 @@
 <body>
     
 <header class="header">
-
     <section class="flex">
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -28,6 +27,7 @@
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#vehicles">vehicles</a>
+            <a href="/public/component/cardata.html">Search</a>
         </nav>
 
         <div id="login-btn">
@@ -37,10 +37,9 @@
 
     </section>
 
-</header> 
+</header>
     
 <div class="login-form-container">
-
     <span id="close-login-form" class="fas fa-times"></span>
 
     <form id="loginForm">
@@ -50,7 +49,6 @@
         <input hidden id="submitValue" value=""/>
         <input type="submit" value="login" class="btn" onclick="changeValue('submitValue', 'login')">
     </form>
-
 </div>
 
 <section class="home" id="home">
@@ -69,115 +67,8 @@
 
     <div class="swiper vehicles-slider">
 
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="public/image/vehicle-1.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-        
-                    <div class="price" id="price1"> <span>price : </span> $62,000/- </div>
-                    <button class="convert-button" data-price="62000" data-target="price1">Convert to Euro</button>
-                    <p>
-                        new
-                        <span class="fas fa-circle"></span> 2021
-                        <span class="fas fa-circle"></span> automatic
-                        <span class="fas fa-circle"></span> petrol
-                        <span class="fas fa-circle"></span> 183mph
-                    </p>
-                    <a href="https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=bmw&models%5B%5D=bmw-i3&maximum_distance=30&zip=90815" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/vehicle-2.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-             
-                    <div class="price" id="price2"> <span>price : </span> $62,000/- </div>
-                    <button class="convert-button" data-price="62000" data-target="price2">Convert to Euro</button>
-                    <p>
-                        new
-                        <span class="fas fa-circle"></span> 2021
-                        <span class="fas fa-circle"></span> automatic
-                        <span class="fas fa-circle"></span> petrol
-                        <span class="fas fa-circle"></span> 183mph
-                    </p>
-                    <a href="https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=bmw&models%5B%5D=bmw-i3&maximum_distance=30&zip=90815" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/vehicle-3.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                  
-                    <div class="price" id="price3"> <span>price : </span> $62,000/- </div>
-                    <button class="convert-button" data-price="62000" data-target="price3">Convert to Euro</button>
-                    <p>
-                        new
-                        <span class="fas fa-circle"></span> 2021
-                        <span class="fas fa-circle"></span> automatic
-                        <span class="fas fa-circle"></span> petrol
-                        <span class="fas fa-circle"></span> 183mph
-                    </p>
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/vehicle-4.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                 
-                    <div class="price" id="price4"> <span>price : </span> $62,000/- </div>
-                    <button class="convert-button" data-price="62000" data-target="price4">Convert to Euro</button>
-                    <p>
-                        new
-                        <span class="fas fa-circle"></span> 2021
-                        <span class="fas fa-circle"></span> automatic
-                        <span class="fas fa-circle"></span> petrol
-                        <span class="fas fa-circle"></span> 183mph
-                    </p>
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/vehicle-5.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-               
-                    <div class="price" id="price5"> <span>price : </span> $62,000/- </div>
-                    <button class="convert-button" data-price="62000" data-target="price5">Convert to Euro</button>
-                    <p>
-                        new
-                        <span class="fas fa-circle"></span> 2021
-                        <span class="fas fa-circle"></span> automatic
-                        <span class="fas fa-circle"></span> petrol
-                        <span class="fas fa-circle"></span> 183mph
-                    </p>
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/vehicle-6.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="price" id="price6"> <span>price : </span> $62,000/- </div>
-                    <button class="convert-button" data-price="62000" data-target="price6">Convert to Euro</button>
-                    <p>
-                        new
-                        <span class="fas fa-circle"></span> 2021
-                        <span class="fas fa-circle"></span> automatic
-                        <span class="fas fa-circle"></span> petrol
-                        <span class="fas fa-circle"></span> 183mph
-                    </p>
-                    <a href="#" class="btn">check out</a>
-                </div>
-            </div>
-
+        <div id="topCarSwiper" class="swiper-wrapper">
+            <!-- Filled in from fillCarData.js -->
         </div>
 
         <div class="swiper-pagination"></div>
@@ -192,72 +83,8 @@
 
     <div class="swiper featured-slider">
 
-       <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="public/image/car-1.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$55,000/-</div>
-                    <a href="https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=bmw&models%5B%5D=bmw-i3&maximum_distance=30&zip=90815" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/car-2.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$55,000/-</div>
-                    <a href="https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=bmw&models%5B%5D=bmw-i3&maximum_distance=30&zip=90815" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/car-3.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$55,000/-</div>
-                    <a href="https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=bmw&models%5B%5D=bmw-i3&maximum_distance=30&zip=90815" class="btn">check out</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="public/image/car-4.png" alt="">
-                <div class="content">
-                    <h3>new model</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$55,000/-</div>
-                    <a href="https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=bmw&models%5B%5D=bmw-i3&maximum_distance=30&zip=90815" class="btn">check out</a>
-                </div>
-            </div>
-
+       <div id="featuredCars" class="swiper-wrapper">
+           <!-- Filled in from fillCarData.js -->
        </div>
 
        <div class="swiper-pagination"></div>
@@ -277,8 +104,9 @@
 
         <div class="box">
             <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> vehicles </a>
+            <a href="/"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#vehicles"> <i class="fas fa-arrow-right"></i> vehicles </a>
+            <a href="/public/component/cardata.html"> <i class="fas fa-arrow-right"></i> search </a>
         </div>
 
         <div class="box">
@@ -304,6 +132,7 @@
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+<script type="text/javascript" src="public/src/fillCarData.js"></script>
 <script type="text/javascript" src="public/src/script.js"></script>
 
 </body>
