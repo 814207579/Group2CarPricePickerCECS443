@@ -17,17 +17,17 @@ function fillCarData() {
 
                     carSlide.innerHTML = `
                         <div class='swiper-slide box'>
-                            <img src='public/image/vehicle-1.png' alt=''>
+                            <img src='${data.cars[i].image}' alt='car'>
                             <div class='content'>
-                            <h2>${data.cars[i].make}</h2>
-                            <h3>${data.cars[i].model}</h3>
+                            <h2>${data.cars[i].make.replace("_", " ")}</h2>
+                            <h3>${data.cars[i].model.replace("_", " ")}</h3>
                             <div class='price'> <span>price : </span> $ ${data.cars[i].price}</div>
                             <p>
                             <span class='fas fa-circle'></span> used
                             <span class='fas fa-circle'></span> ${data.cars[i].model_year}
                             <span class='fas fa-circle'></span> ${data.cars[i].mileage} miles
                             </p>
-                            <a href='https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=${data.cars[i].make}&models%5B%5D=${data.cars[i].make + "-" + data.cars[i].model}&maximum_distance=30&zip=90804' class='btn'>check out</a>
+                            <a target="_blank" href='https://www.cars.com/shopping/results/?stock_type=all&makes%5B%5D=${data.cars[i].make}&models%5B%5D=${data.cars[i].make + "-" + data.cars[i].model}&maximum_distance=30&zip=90804' class='btn'>check out</a>
                             </div>
                             </div>
                         `;
