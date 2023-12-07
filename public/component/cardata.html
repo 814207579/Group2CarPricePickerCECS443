@@ -32,6 +32,15 @@
                                 seen[value] = true;
                             }
                         });
+                        //sort it
+                        //used from: https://stackoverflow.com/questions/12073270/sorting-options-elements-alphabetically-using-jquery
+                        let options = $('#car-years option');
+                        let arr = options.map(function(_, o) { return { t: $(o).text(), v: o.value }; }).get();
+                        arr.sort(function(o1, o2) { return o1.t > o2.t ? 1 : o1.t < o2.t ? -1 : 0; });
+                        options.each(function(i, o) {
+                            o.value = arr[i].v;
+                            $(o).text(arr[i].t);
+                        });
                     }
                 })
                 .catch(error => {
@@ -69,6 +78,15 @@
                                 seen[value] = true;
                             }
                         });
+                        //sort it
+                        //used from: https://stackoverflow.com/questions/12073270/sorting-options-elements-alphabetically-using-jquery
+                        let options = $('#car-makes option');
+                        let arr = options.map(function(_, o) { return { t: $(o).text(), v: o.value }; }).get();
+                        arr.sort(function(o1, o2) { return o1.t > o2.t ? 1 : o1.t < o2.t ? -1 : 0; });
+                        options.each(function(i, o) {
+                            o.value = arr[i].v;
+                            $(o).text(arr[i].t);
+                        });
                     }
                 })
                 .catch(error => {
@@ -104,6 +122,15 @@
                             else {
                                 seen[value] = true;
                             }
+                        });
+                        //sort it
+                        //used from: https://stackoverflow.com/questions/12073270/sorting-options-elements-alphabetically-using-jquery
+                        let options = $('#car-models option');
+                        let arr = options.map(function(_, o) { return { t: $(o).text(), v: o.value }; }).get();
+                        arr.sort(function(o1, o2) { return o1.t > o2.t ? 1 : o1.t < o2.t ? -1 : 0; });
+                        options.each(function(i, o) {
+                            o.value = arr[i].v;
+                            $(o).text(arr[i].t);
                         });
                     }
 
