@@ -230,12 +230,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function convertToEuro(amount, targetId, button) {
   const usdToEuroRate = 0.88; // Sample conversion rate
   const convertedAmount = amount * usdToEuroRate;
-  document.getElementById(targetId).innerHTML = `<span>price : </span> €${convertedAmount.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits: 2})}/-`;
+  document.getElementById(targetId).innerHTML = `<span>price : </span> €${convertedAmount.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits: 2})}`;
   button.setAttribute('data-currency', 'EURO');
 }
 
 function convertToUSD(amount, targetId, button) {
-  document.getElementById(targetId).innerHTML = `<span>price : </span> $${amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits:2})}/-`;
+  document.getElementById(targetId).innerHTML = `<span>price : </span> $${amount.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits:2})}`;
   button.setAttribute('data-currency', 'USD');
 }
 

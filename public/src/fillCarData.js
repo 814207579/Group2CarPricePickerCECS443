@@ -20,8 +20,9 @@ function fillCarData() {
                         <div class='content'>
                             <h2>${data.cars[i].make.replace("_", " ")}</h2>
                             <h3>${data.cars[i].model.replace("_", " ")}</h3>
-                            <div class='price'> 
-                                <span>price : </span> $ ${data.cars[i].price}
+                            <a class="btn convert-button" data-price="${data.cars[i].price}" data-target="price${i}" data-currency="USD">change price</a>
+                            <div class='price' id="price${i}">
+                                <span>price : </span> $${data.cars[i].price}
                             </div>
                             <p>
                                 <span class='fas fa-circle'></span> used
